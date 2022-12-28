@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using App.GestaoOutlet.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace App.GestaoOutlet.Data;
