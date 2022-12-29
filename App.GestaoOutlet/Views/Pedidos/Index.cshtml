@@ -1,0 +1,48 @@
+﻿@model App.GestaoOutlet.Models.PedidoViewModel;
+
+@{
+    ViewData["Title"] = "Pedidos";
+}
+
+<div class="text-center">
+    <h1>PEDIDOS</h1>
+    <p>Crie, altere e exclua pedidos da loja</p>
+</div>
+
+@*<div>
+    <form asp-controller="Pedidos" asp-action="Index">
+        Endereco: <select asp-for="Pedidos" asp-items="Model.Pedidos">
+        </select>
+        <input type="submit" value="Buscar"/>
+    </form>
+</div>*@
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pedidos[0].Idpedido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pedidos[0].IdformaPag)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pedidos[0].DtEntrega)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pedidos[0].EnderecoEntrega)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pedidos[0].Idstatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pedidos[0].VlrGasto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pedidos[0].VlrRecebido)
+                </th>
+            </tr>
+        </thead>
+    </table>
+</div>
